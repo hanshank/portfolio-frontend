@@ -1,0 +1,138 @@
+.App-header {
+  text-align: center;
+  height: 150px;
+  padding: 20px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.tile {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  background: lightyellow;
+  float: left;
+  font-size: 11px;
+  text-align: left;
+}
+
+.fullscreenBg {
+  position: relative;
+  background: linear-gradient(#f1f1f16b, #774a526b);;
+  height: 100%;
+  width: 100%;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  width: 100%;
+  z-index: 100;
+}
+
+
+.navbar {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.navLink {
+  padding: 0 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+}
+
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+.banner {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bannerText {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+}
+
+.bannerTitle {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  z-index: 100;
+}
+
+.bannerSubTitle {
+  font-size: 40px;
+  font-weight: lighter;
+  color: white;
+  z-index: 100;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 4%;
+  z-index: 100;
+  padding: 0;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.socialIcons {
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 10px;
+}
+
+.icon {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.icGi {
+  background-color: #333;
+  color: #fff;
+}
+
+.icLi {
+ background-color: #0077B5;
+ color: #fff;
+}
