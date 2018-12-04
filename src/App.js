@@ -11,6 +11,8 @@ import Portfolio from './components/Portfolio';
 import Blog from './components/Blog';
 import Page from './components/Page';
 import VideoBg from './components/VideoBg';
+import MobileMenu from './components/MobileMenu';
+import Backdrop from './components/Backdrop';
 import {
   CSSTransition,
   TransitionGroup,
@@ -18,11 +20,35 @@ import {
 
 
 class App extends Component {
+  constructor(props) {
+     super(props);
+     this.state = {
+         mobileMenuOpen: false
+      };
+  }
+
+  mobileMenuClickHandler = () => {
+    this.setState((prevState) => {
+      return {mobileMenuOpen: !prevState.mobileMenuOpen};
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({mobileMenuOpen: false})
+  }
 
   render() {
+    let backdrop;
+
+    if (this.state.mobileMenuOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />;
+    }
+
     return (
       <div className="App">
-        <Navigation />
+        <Navigation mobileMenuHandler={this.mobileMenuClickHandler}/>
+        <MobileMenu show={this.state.mobileMenuOpen} />
+        {backdrop}
         <VideoBg />
         <div className='page'>
           <Switch>
