@@ -1,3 +1,5 @@
+
+
 .App-header {
   text-align: center;
   height: 150px;
@@ -6,6 +8,157 @@
 
 .App-intro {
   font-size: large;
+}
+
+.title {
+  font-size: 38px;
+  color: #3cbbff;
+}
+
+.main-title {
+  font-size: 38px;
+  color: #fff;
+}
+
+.project {
+  padding-bottom: 20px;
+}
+
+.project-inner {
+  background: #b8924bab;
+  padding: 2%;
+}
+
+.projects-header {
+  background: #fffff2a;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 10px;
+}
+
+.button {
+  padding: 1%;
+  background: #3cbbff;
+  color: white;
+  font-size: 21px;
+  border: none;
+}
+
+.text {
+  color: white;
+  font-size: 28px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.page {
+  position: absolute;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.page-content {
+  height: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.padded {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.fadeout-content {
+    content: "";
+    bottom: 0;
+    height: 100px;
+    width: 100px;
+    background-image: -moz-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+
+.fullscreen-center {
+  display: flex;
+  align-items: center;
+}
+
+.homepage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.portfolio-page {
+  position: absolute;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.arrow-container {
+  position: absolute;
+  background: white;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-arrow {
+  height: 20px;
+  width: 20px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  transform: rotate(135deg);
+}
+
+.right-arrow {
+  height: 20px;
+  width: 20px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  transform: rotate(-45deg);
 }
 
 .tile {
@@ -18,20 +171,27 @@
   text-align: left;
 }
 
+
+
 .fullscreenBg {
-  position: relative;
-  background: linear-gradient(#f1f1f16b, #774a526b);;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #00000091;
   height: 100%;
   width: 100%;
 }
 
 .navigation {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: center;
-  padding-top: 3%;
-  padding-bottom: 4%;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 1%;
+  padding-right: 15px;
+  padding-left: 15px;
   width: 100%;
   z-index: 100;
 }
@@ -44,11 +204,31 @@
   z-index: 10;
 }
 
+.nav-items {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-start {
+  margin-right: auto;
+}
+
 .navLink {
-  padding: 0 50px;
+  position: relative;
   text-decoration: none;
   color: white;
   font-size: 28px;
+}
+
+.active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 1px solid white;
+  color: white;
+  bottom: 0;
+  left: 0;
 }
 
 #myVideo {
@@ -85,14 +265,20 @@
 
 .bannerTitle {
   font-size: 60px;
-  font-weight: bold;
+  font-weight: 500;
   color: white;
   z-index: 100;
 }
 
+.aboutSection {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .bannerSubTitle {
   font-size: 40px;
-  font-weight: lighter;
+  font-weight: 200;
   color: white;
   z-index: 100;
 }
@@ -102,10 +288,7 @@
 }
 
 .logo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 4%;
+  width: 2.1em;
   z-index: 100;
   padding: 0;
 }
@@ -116,9 +299,11 @@
 
 .socialIcons {
   position: absolute;
+  bottom: 0;
+  left: 0;
   display: block;
-  top: 10px;
-  right: 10px;
+  margin: auto;
+  z-index: 100;
 }
 
 .icon {
@@ -135,4 +320,57 @@
 .icLi {
  background-color: #0077B5;
  color: #fff;
+}
+
+.topMenu {
+
+}
+
+.fade-appear
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
+}
+
+.whiteTitle {
+  color: white;
+}
+
+.email {
+  color: #3cbbff;
 }
