@@ -17,8 +17,6 @@ class About extends Component {
             <p className='text'><strong>Top Skills: </strong>Ruby, Ruby on Rails, JavaScript, HTML, CSS, React.js</p>
             <p className='text'><strong>Tools I use: </strong>Sass, Git, GitHub, postgreSQL, mySQL, WordPress</p>
           </div>
-          <Footer />
-
         </div>
       </div>
     );
