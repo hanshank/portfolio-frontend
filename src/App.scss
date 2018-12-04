@@ -11,7 +11,7 @@
 }
 
 .title {
-  font-size: 38px;
+  font-size: 31px;
   color: #3cbbff;
 }
 
@@ -46,7 +46,7 @@
 
 .text {
   color: white;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .text-center {
@@ -72,8 +72,8 @@
 
 .page-content {
   height: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .padded {
@@ -373,4 +373,38 @@
 
 .email {
   color: #3cbbff;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+  .page-content {
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .page-content {
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .page-content {
+    height: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }
