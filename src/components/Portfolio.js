@@ -22,7 +22,7 @@ class Portfolio extends Component {
           <div className='projects-header'>
             <h1 className='text-center main-title'>Projects</h1>
             <p className='slamText white text-center'>
-              I am happy to have worked on some really cool projects. Feel free to check out some of my projects in the section below.
+              I am happy to have worked on some really cool projects. Feel free to check out some of my projects in the section below. A few of them are deployed to free Heroku servers, so give it a second to load.
             </p>
           </div>
 
