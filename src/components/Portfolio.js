@@ -17,12 +17,11 @@ class Portfolio extends Component {
 
   render() {
     return (
-      <div className='portfolio-page'>
-
+      <div className='portfolio-page padding-bottom'>
         <div className='page-content'>
           <div className='projects-header'>
             <h1 className='text-center main-title'>Projects</h1>
-            <p className='text'>I am always working on some cool project. Check out some of my work below by clicking on the title</p>
+            <p className='text text-center'>I am always working on awesome projects. Feel free to check out some of my work below</p>
           </div>
 
           <div className='project'>
@@ -42,6 +41,17 @@ class Portfolio extends Component {
               <a className='button' href="https://ulsbygg.no" target="_blank">See Website</a>
             </div>
           </div>
+
+          <div className='project'>
+            <div className='project-inner'>
+              <h1 className='title'>Nomster - A Yelp Clone</h1>
+              <p className='text'>An app I built that replicates a Yelp style website where users can sign up, add locations, rate and comment. The app supports image uploading via AWS S3. Users can add images to the places they have visited.</p>
+              <p className='text'><strong>Skills used: </strong>Ruby on Rails, JavaScript, AWS S3, HTML, CSS, Bootstrap</p>
+              <a className='button' href="https://nomster-hans-hanken.herokuapp.com" target="_blank">See Website</a>
+            </div>
+          </div>
+
+
 
           <div className='project'>
             <div className='project-inner'>
