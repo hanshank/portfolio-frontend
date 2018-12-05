@@ -47,7 +47,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navigation mobileMenuHandler={this.mobileMenuClickHandler}/>
-        <MobileMenu show={this.state.mobileMenuOpen} />
+        <MobileMenu show={this.state.mobileMenuOpen} mobileMenuHandler={this.mobileMenuClickHandler} />
         {backdrop}
         <VideoBg />
         <div className='page'>
