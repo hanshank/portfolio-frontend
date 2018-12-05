@@ -46,14 +46,40 @@ class Portfolio extends Component {
 
           <div className='project'>
             <div className='project-inner'>
-              <h1 className='title'>Nomster - A Yelp Clone</h1>
-              <p className='text'>An app I built that replicates a Yelp style website where users can sign up, add locations, rate and comment. The app supports image uploading via AWS S3. Users can add images to the places they have visited.</p>
+              <h1 className='title'>ToDoster - Rails API Todo List</h1>
+              <p className='text'>A cool project where I built a Rails JSON API which i interacted with via AJAX requests.</p>
+              <p className='text'><strong>Skills used: </strong>Ruby on Rails, AJAX, JSON, JavaScript, HTML, CSS</p>
+              <a className='button' href="https://todoster-hans-hanken.herokuapp.com/" target="_blank">See Website</a>
+            </div>
+          </div>
+
+          <div className='project'>
+            <div className='project-inner'>
+              <h1 className='title'>Grammable - A TDD Approach To An Instagram Clone</h1>
+              <p className='text'>A lightweight version of Instagram on the web. The approach to building this was TDD/BDD. The test are written in RSpec, a popular unit testing framework for Ruby. The website allows users to add posts, images and comments. Image uploading is done via AWS S3.</p>
               <p className='text'><strong>Skills used: </strong>Ruby on Rails, JavaScript, AWS S3, HTML, CSS, Bootstrap</p>
-              <a className='button' href="https://nomster-hans-hanken.herokuapp.com" target="_blank">See Website</a>
+              <a className='button' href="https://grammable-hans-hanken.herokuapp.com" target="_blank">See Website</a>
             </div>
           </div>
 
 
+          <div className='project'>
+            <div className='project-inner'>
+              <h1 className='title'>Nomster - A Yelp Clone</h1>
+              <p className='text'>An app I built that replicates a Yelp style website where users can sign up, add locations, rate and comment. The app supports image uploading via AWS S3. Users can add images to the places they have visited.</p>
+              <p className='text'><strong>Skills used: </strong>Ruby on Rails, JavaScript, Google Maps, AWS S3, HTML, CSS, Bootstrap</p>
+              <a className='button' href="https://nomster-hans-hanken.herokuapp.com" target="_blank">See Website</a>
+            </div>
+          </div>
+
+          <div className='project'>
+            <div className='project-inner'>
+              <h1 className='title'>Flixter - Teach Courses Online</h1>
+              <p className='text'>This app allows users to sign up and start offering courses through the website. It is set up with Stripe Payments in test mode.</p>
+              <p className='text'><strong>Skills used: </strong>Ruby on Rails, JavaScript, Stripe API, HTML, CSS, Bootstrap</p>
+              <a className='button' href="https://flixter-hans-hanken.herokuapp.com/" target="_blank">See Website</a>
+            </div>
+          </div>
 
           <div className='project'>
             <div className='project-inner'>
