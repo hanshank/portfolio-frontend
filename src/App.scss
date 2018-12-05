@@ -1,6 +1,7 @@
 .title {
-  font-size: 35px;
-  color: #3cbbff;
+  font-size: 32px;
+  color: #ffc946;
+  font-weight: 900;
 }
 
 .error-container {
@@ -11,16 +12,20 @@
 
 .main-title {
   font-size: 40px;
+  font-weight: 900;
   color: #fff;
 }
 
 .project {
-  padding-bottom: 20px;
+  background: #000000b8;
+  padding: 25px;
+  margin-bottom: 25px;
 }
 
-.project-inner {
-  padding-top: 2%;
-  padding-bottom: 2%;
+.text-box {
+  background: #000000b8;
+  padding: 25px;
+  border-radius: 10px;
 }
 
 .projects-header {
@@ -31,15 +36,18 @@
 }
 
 .button {
+  display: inline-block;
   padding: 10px;
-  background: #3cbbff;
+  background: #00a0e4;
   color: white;
   font-size: 21px;
+  font-weight: 300;
   border: none;
 }
 
 .text {
   color: white;
+  font-weight: 500;
   font-size: 25px;
 }
 
@@ -53,8 +61,6 @@
 
 .page {
   position: absolute;
-  padding-left: 30px;
-  padding-right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +91,7 @@
 
 .portfolio-page {
   position: absolute;
-  padding-top: 10%;
+  padding-top: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,6 +133,10 @@
   transform: rotate(-45deg);
 }
 
+.highlighted_text {
+  text-decoration: underline;
+}
+
 // .tile {
 //   height: 150px;
 //   width: 150px;
@@ -141,7 +151,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: #00000091;
+  background: #0000004f;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -233,13 +243,13 @@
 }
 
 .exit-icon-container {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
+  // position: absolute;
+  // top: 5px;
+  // right: 5px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // padding: 5px;
 }
 
 .exit-icon {
@@ -292,6 +302,10 @@
   padding-right: 0;
   padding-top: 10px;
   margin: 0;
+}
+
+.white {
+  color: white;
 }
 
 .mobile-nav-item {
@@ -349,23 +363,29 @@
 }
 
 .bannerTitle {
-  font-size: 60px;
-  font-weight: 500;
+  font-size: 55px;
+  font-weight: 900;
   color: white;
   z-index: 100;
+}
+
+.bannerSubTitle {
+  font-size: 40px;
+  font-weight: 300;
+  color: white;
+  z-index: 100;
+}
+
+.slamText {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.8em;
 }
 
 .aboutSection {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-
-.bannerSubTitle {
-  font-size: 40px;
-  font-weight: 200;
-  color: white;
-  z-index: 100;
 }
 
 .logo {
@@ -381,14 +401,14 @@
 .icon {
   display: inline-block;
   padding: 15px;
-  min-width: 150px;
+  min-width: 100%;
   font-size: 18px;
 }
 
 .icon-container {
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .icGi {
@@ -464,8 +484,28 @@
   display: none;
 }
 
+.fullscreen-center {
+  display: flex;
+  align-items: center;
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+
+  .icon-container {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .icon {
+    min-width: 125px;
+  }
+
+  .page {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
   .page-content {
     height: 100%;
@@ -489,6 +529,13 @@
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
+  }
+
+  .icon {
+    display: inline-block;
+    padding: 15px;
+    min-width: 150px;
+    font-size: 18px;
   }
 
   .nav-items {

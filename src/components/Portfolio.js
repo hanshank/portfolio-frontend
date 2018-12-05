@@ -21,7 +21,9 @@ class Portfolio extends Component {
         <div className='page-content'>
           <div className='projects-header'>
             <h1 className='text-center main-title'>Projects</h1>
-            <p className='text text-center'>I am always working on awesome projects. Feel free to check out some of my work below</p>
+            <p className='slamText white text-center'>
+              I am happy to have worked on some really cool projects. Feel free to check out some of my projects in the section below.
+            </p>
           </div>
 
           <div className='project'>
@@ -56,7 +58,7 @@ class Portfolio extends Component {
           <div className='project'>
             <div className='project-inner'>
               <h1 className='title'>Muli Clothing - A fashion startup</h1>
-              <p className='text'>Fashion startup company located in Los Angeles California. The company can now focus on selling their baby products instead of worrying about their website. The site is powered by WordPress and uses WooCommerce as the ecommerce platform. The outstanding photographer <a href='https://tonemolnes.no/' target='_blank'>Tone Molnes</a> made the design really stand out and was a joy to collaborate with on this project.</p>
+              <p className='text'>Fashion startup company located in Los Angeles California. The company can now focus on selling their baby products instead of worrying about their website. The site is powered by WordPress and uses WooCommerce as the ecommerce platform. The outstanding photographer <a href='https://tonemolnes.no/' target='_blank' className='highlighted_text white'>Tone Molnes</a> made the design really stand out and was a joy to collaborate with on this project.</p>
               <p className='text'><strong>Skills used: </strong>WordPress, WooCommerce, JavaScript, HTML, CSS, PHP, Google Analytics</p>
               <a className='button' href="https://muliclothing.com" target="_blank">See Website</a>
             </div>

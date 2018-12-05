@@ -5,8 +5,9 @@ const Home = () => {
   return (
     <div className='homepage'>
       <div className="bannerText uppercase text-center">
-        <h1 className='bannerTitle'>I am Hans Hanken</h1>
-        <p className='bannerSubTitle'>And I am a Full Stack Web Developer</p>
+        <h1 className='bannerTitle'>I Am Hans Hanken</h1>
+        <h1 className='bannerTitle'></h1>
+        <p className='bannerSubTitle'>A Full Stack Web Developer</p>
       </div>
     </div>
   );
