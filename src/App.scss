@@ -48,7 +48,7 @@
 .text {
   color: white;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 19px;
 }
 
 .text-center {
@@ -377,7 +377,7 @@
 }
 
 .slamText {
-  font-size: 28px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 1.8em;
 }
@@ -492,6 +492,18 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 
+  .slamText {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.8em;
+  }
+
+  .text {
+    color: white;
+    font-weight: 500;
+    font-size: 21px;
+  }
+
   .icon-container {
     display: inline-block;
     padding-left: 10px;
@@ -530,6 +542,20 @@
   .menu-toggle {
     display: none;
   }
+
+
+  .slamText {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.8em;
+  }
+
+  .text {
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+  }
+
 
   .icon {
     display: inline-block;
