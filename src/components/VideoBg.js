@@ -7,7 +7,7 @@ class VideoBg extends Component {
   render() {
     return (
       <div className="fullscreenBg">
-        <video autoPlay muted loop playsinline id="myVideo">
+        <video autoPlay loop muted playsInline id="myVideo">
           <source src={video} type="video/mp4"/>
         </video>
       </div>
